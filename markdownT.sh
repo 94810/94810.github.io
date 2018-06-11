@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TEMPLATE_FILE=${HOME}/.models/mdHtml
-CSS=air.css
+CSS="..\/air.css"
 TITLE=Welcome
 OUT=${1//.*/.html}
 

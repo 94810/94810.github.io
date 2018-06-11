@@ -16,6 +16,7 @@ I'm currently looking for a 6 month intership, starting from the 14 july.
 * Linkedin : [pbourdelas](https://www.linkedin.com/in/pbourdelas/)
 * Github : [@94810](https://github.com/94810)
 * Discord : Basolur#9702
+* Thingiverse : [Basolur](https://www.thingiverse.com/basolur/designs)
 
 ## Projects
 
