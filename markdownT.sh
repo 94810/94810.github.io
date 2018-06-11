@@ -1,9 +1,15 @@
 #!/bin/bash
 
-TEMPLATE_FILE=mdHtml
+TEMPLATE_FILE=${HOME}/.models/mdHtml
+CSS=air.css
+TITLE=Welcome
+OUT=${1//.*/.html}
 
-cat ${TEMPLATE_FILE}/headTemplate.html
 
-markdown $1
+cat ${TEMPLATE_FILE}/headTemplate.html | sed -e "s/#CSS#/${CSS}/" -e "s/#TITLE#/${TITLE}/" > $OUT
 
-cat ${TEMPLATE_FILE}/tailTemplate.html
+markdown $1 >> $OUT
+
+cat ${TEMPLATE_FILE}/tailTemplate.html >> $OUT
+
+
