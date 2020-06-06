@@ -4,12 +4,6 @@
 
 ### Welcome on my personal page !
 
-I'm a 23 year old french software developper. 
-I'm in my last year of studies in software engineering and video games developpement at [ISTY](http://www.isty.uvsq.fr) and [UQAC](http://www.uqac.ca).
-I like libre software, tabletop role-playing game and, of course, video game ! 
-
-I'm currently looking for a 6 month intership, starting from the 14 july.
-
 ## Where to find me
 
 * Email : <a href="mailto:pablo.bourdelas@gmail.com">pablo.bourdelas@gmail.com</a> 
