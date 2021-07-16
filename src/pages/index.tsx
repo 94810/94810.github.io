@@ -1,5 +1,4 @@
 import { CardDeck } from 'components/CardDeck'
-import { CardSquare } from 'components/CardSquare';
 import { Cover, Nav } from 'components/Header'
 import { Profile } from 'components/Profile';
 import React from 'react'
