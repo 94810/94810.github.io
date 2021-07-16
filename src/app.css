@@ -1,0 +1,235 @@
+body {
+  --main-color: rgb(61, 38, 69);
+  --text-invert-color: #f0eff4;
+  --text-hover-color: #e19c51;
+  --text-max-width: 80ch;
+  --background-color: #f0eff4;
+  --background-shade: #f0eaea;
+  --test: 3rem;
+  margin: 0;
+  padding: 0;
+  color: #454545;
+  background-color: var(--background-color);
+  font-family: Open Sans, Arial;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--text-hover-color);
+}
+
+.content {
+  max-width: var(--text-max-width);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  display: block;
+}
+
+nav {
+  margin-top: 0;
+  width: 100%;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  height: 3rem;
+  color: var(--text-invert-color);
+}
+
+.header-cover {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  height: 70vh;
+  align-items: center;
+}
+
+.header-cover-background {
+  height: 100%;
+  background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/04/return_to_the_veil_nebula/23229438-1-eng-GB/Return_to_the_Veil_Nebula_pillars.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-cover-background canvas {
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-cover-hook {
+  position: relative;
+  width: 60ch;
+  text-align: center;
+  color: var(--text-invert-color);
+  margin: auto;
+  font-weight: bolder;
+  height: 100%;
+  z-index: 3;
+}
+
+.header-cover-hook h2 {
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
+  top: 25%;
+  z-index: 4;
+}
+.header-cover-hook a {
+  color: var(--text-invert-color);
+}
+.header-cover-hook a:hover {
+  color: var(--text-hover-color);
+}
+
+.magic-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 6em;
+  height: 100%;
+  width: 100%;
+}
+.magic-text-center {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 100%;
+}
+
+.magic-text-item {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.header-cover-contact {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+
+.header-cover-contact a {
+  color: var(--text-invert-color);
+  padding: 1rem;
+}
+
+.header-cover-contact a:hover {
+  color: var(--text-hover-color);
+}
+
+.header-cover-contact ul,
+li {
+  display: inline;
+}
+
+.header-name {
+  padding-left: 0.5rem;
+}
+.header-name a {
+  color: var(--text-invert-color);
+  font-weight: bold;
+}
+.header-name a:hover {
+  color: var(--text-hover-color);
+}
+
+.card-container {
+  width: 100%;
+  margin: 0.5rem auto 0.5rem auto;
+  background-color: var(--background-shade);
+  height: 0;
+  padding-bottom: 33%;
+}
+
+.card-container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.card-image {
+  width: 33%;
+}
+
+.card-text {
+  width: 60%;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: small;
+}
+
+.about-me-profile {
+  width: 100%;
+  text-align: center;
+}
+
+.about-me-profile svg {
+  width: 25%;
+}
+
+.card-square-container {
+  --dim: 25vw;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: var(--background-shade);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  margin: 0.5rem;
+}
+
+.card-square-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dim);
+  z-index: 0;
+}
+
+.card-square-text {
+  position: relative;
+  width: var(--dim);
+  background-color: var(--background-shade);
+  z-index: 1;
+  transition: 1s;
+  transform: translateY(25vw);
+  height: calc(var(--dim) * 0.75);
+  font-size: 1.2vw;
+}
+
+.card-square-container:hover .card-square-text {
+  transition: 0.5s;
+  transform: translateY(50%);
+}
+
+.card-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

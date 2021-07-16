@@ -1,0 +1,1 @@
+export const zArray = (n: number, init:any = 0) => new Array(n).fill(init);
