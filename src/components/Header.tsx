@@ -40,12 +40,8 @@ export const Nav = () => (
   </nav>
 );
 
-export const Cover = () => {
-  const ratio = window.innerWidth/(window.innerHeight*0.80);
-  const coef = ratio <= 1 ? 0 : ratio * 0.2;
-  
-  return (<div className="header-cover">
-    <ParallaxBackground className="header-cover-background" coef={-coef}>
+export const Cover = () => <div className="header-cover">
+    <ParallaxBackground className="header-cover-background" coef={0.2}>
         <div className="header-cover-hook">
           <h2>Hi, I'm <CVLink/></h2>
           <MagickText rep={9} coef={0.1} mainColor={[255,255,255]} trailColor={[119,74,138]}>
@@ -57,5 +53,4 @@ export const Cover = () => {
         <NavContact />
         </div>
     </ParallaxBackground>
-  </div>)
-};
+  </div>
