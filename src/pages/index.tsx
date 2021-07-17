@@ -46,7 +46,7 @@ export default () => (
     </p>
     <h1>My work</h1>
       <CardDeck cardDescriptor={cards} />
-      <footer>Header Image : Return to the Veil Nebula from ESA</footer>
+      <footer>Header Image : <a href="https://www.esa.int/ESA_Multimedia/Images/2021/04/Return_to_the_Veil_Nebula">Return to the Veil Nebula from ESA</a></footer>
   </div>
   </>
 )
